@@ -538,16 +538,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">{
-  "name": "我的应用",
-  "scopes": ["crons", "envs", "scripts"]
-}</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -593,17 +584,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">{
-  "id": 1,
-  "name": "更新后的应用名",
-  "scopes": ["crons", "envs", "logs"]
-}</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -648,13 +629,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">[1, 2, 3]</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -695,13 +670,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">PUT /apps/1/reset-secret</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -716,7 +685,8 @@
             </div>
             <div class="test-panel">
               <div class="test-title">🧪 在线测试</div>
-              <button class="test-button" onclick="testApi('PUT', '/apps/1/reset-secret', this)">发送请求</button>
+              <div style="margin-bottom: 8px;"><label style="font-size: 13px; color: #666; margin-bottom: 4px; display: block;">id (路径参数)</label><input type="text" class="test-input" data-path-param="id" placeholder="请输入应用ID" value="1" style="min-height: auto; height: 40px; margin-bottom: 0;"></div>
+              <button class="test-button" onclick="testApiWithPathParams('PUT', '/apps/:id/reset-secret', this)">发送请求</button>
               <div class="test-result"></div>
             </div>
           </div>
@@ -752,16 +722,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">{
-  "username": "admin",
-  "password": "admin123"
-}</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -803,13 +764,7 @@
               </div>
               <div class="code-block url-block" data-path="/user/logout"></div>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">(无需请求体)</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -840,13 +795,7 @@
               </div>
               <div class="code-block url-block" data-path="/user"></div>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">(无需请求体)</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -894,16 +843,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">{
-  "username": "newadmin",
-  "password": "newpassword123"
-}</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -983,13 +923,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">{"code": "123456"}</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -1030,13 +964,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">{"code": "123456"}</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -1114,16 +1042,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">{
-  "type": "email",
-  "config": {"to": "user@example.com"}
-}</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -1315,13 +1234,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">GET /crons?searchValue=测试</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -1375,17 +1288,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">{
-  "name": "测试任务",
-  "command": "node test.js",
-  "schedule": "0 0 * * *"
-}</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -1430,13 +1333,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">[1, 2, 3]</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -1477,13 +1374,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">[1, 2]</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -1527,18 +1418,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">{
-  "id": 1,
-  "name": "更新的任务",
-  "command": "node updated.js",
-  "schedule": "0 1 * * *"
-}</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -1584,13 +1464,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">[1, 2, 3]</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -1631,13 +1505,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">[1, 2]</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -1678,13 +1546,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">[1, 2]</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -1725,13 +1587,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">[1]</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -1772,13 +1628,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">[1]</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -1827,7 +1677,8 @@
             </div>
             <div class="test-panel">
               <div class="test-title">🧪 在线测试</div>
-              <button class="test-button" onclick="testApi('GET', '/crons/1', this)">发送请求</button>
+              <div style="margin-bottom: 8px;"><label style="font-size: 13px; color: #666; margin-bottom: 4px; display: block;">id (路径参数)</label><input type="text" class="test-input" data-path-param="id" placeholder="请输入任务ID" value="1" style="min-height: auto; height: 40px; margin-bottom: 0;"></div>
+              <button class="test-button" onclick="testApiWithPathParams('GET', '/crons/:id', this)">发送请求</button>
               <div class="test-result"></div>
             </div>
           </div>
@@ -1860,7 +1711,8 @@
             </div>
             <div class="test-panel">
               <div class="test-title">🧪 在线测试</div>
-              <button class="test-button" onclick="testApi('GET', '/crons/1/log', this)">发送请求</button>
+              <div style="margin-bottom: 8px;"><label style="font-size: 13px; color: #666; margin-bottom: 4px; display: block;">id (路径参数)</label><input type="text" class="test-input" data-path-param="id" placeholder="请输入任务ID" value="1" style="min-height: auto; height: 40px; margin-bottom: 0;"></div>
+              <button class="test-button" onclick="testApiWithPathParams('GET', '/crons/:id/log', this)">发送请求</button>
               <div class="test-result"></div>
             </div>
           </div>
@@ -1886,13 +1738,7 @@
               </div>
               <div class="code-block url-block" data-path="/envs"></div>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">(无需请求体)</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -1943,17 +1789,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">[{
-  "name": "TEST_ENV",
-  "value": "test_value",
-  "remarks": "测试环境变量"
-}]</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -2001,18 +1837,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">{
-  "id": 1,
-  "name": "TEST_ENV",
-  "value": "new_value",
-  "remarks": "更新后的备注"
-}</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -2058,13 +1883,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">[1, 2, 3]</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -2112,7 +1931,8 @@
             </div>
             <div class="test-panel">
               <div class="test-title">🧪 在线测试</div>
-              <button class="test-button" onclick="testApi('GET', '/envs/1', this)">发送请求</button>
+              <div style="margin-bottom: 8px;"><label style="font-size: 13px; color: #666; margin-bottom: 4px; display: block;">id (路径参数)</label><input type="text" class="test-input" data-path-param="id" placeholder="请输入环境变量ID" value="1" style="min-height: auto; height: 40px; margin-bottom: 0;"></div>
+              <button class="test-button" onclick="testApiWithPathParams('GET', '/envs/:id', this)">发送请求</button>
               <div class="test-result"></div>
             </div>
           </div>
@@ -2142,13 +1962,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">[1, 2]</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -2189,13 +2003,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">[1, 2]</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -2237,16 +2045,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">{
-  "id": 1,
-  "name": "NEW_ENV_NAME"
-}</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -2337,7 +2136,8 @@
             </div>
             <div class="test-panel">
               <div class="test-title">🧪 在线测试</div>
-              <button class="test-button" onclick="testApi('GET', '/scripts/test.js', this)">发送请求</button>
+              <div style="margin-bottom: 8px;"><label style="font-size: 13px; color: #666; margin-bottom: 4px; display: block;">file (路径参数)</label><input type="text" class="test-input" data-path-param="file" placeholder="请输入脚本文件名(如test.js)" value="test.js" style="min-height: auto; height: 40px; margin-bottom: 0;"></div>
+              <button class="test-button" onclick="testApiWithPathParams('GET', '/scripts/:file', this)">发送请求</button>
               <div class="test-result"></div>
             </div>
           </div>
@@ -2369,16 +2169,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">{
-  "filename": "newscript.js",
-  "content": "console.log('Hello');"
-}</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -2424,16 +2215,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">{
-  "filename": "test.js",
-  "content": "console.log('Updated');"
-}</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -2478,13 +2260,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">{"filename": "test.js"}</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -2574,7 +2350,8 @@
             </div>
             <div class="test-panel">
               <div class="test-title">🧪 在线测试</div>
-              <button class="test-button" onclick="testApi('GET', '/configs/1', this)">发送请求</button>
+              <div style="margin-bottom: 8px;"><label style="font-size: 13px; color: #666; margin-bottom: 4px; display: block;">id (路径参数)</label><input type="text" class="test-input" data-path-param="id" placeholder="请输入配置ID" value="1" style="min-height: auto; height: 40px; margin-bottom: 0;"></div>
+              <button class="test-button" onclick="testApiWithPathParams('GET', '/configs/:id', this)">发送请求</button>
               <div class="test-result"></div>
             </div>
           </div>
@@ -2605,16 +2382,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">{
-  "name": "custom.sh",
-  "content": "export MY_VAR=123"
-}</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -2660,17 +2428,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">{
-  "id": 1,
-  "name": "config.sh",
-  "content": "export UPDATED_VAR=456"
-}</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -2715,13 +2473,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">[1, 2]</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -2807,7 +2559,8 @@
             </div>
             <div class="test-panel">
               <div class="test-title">🧪 在线测试</div>
-              <button class="test-button" onclick="testApi('GET', '/logs/app.log', this)">发送请求</button>
+              <div style="margin-bottom: 8px;"><label style="font-size: 13px; color: #666; margin-bottom: 4px; display: block;">file (路径参数)</label><input type="text" class="test-input" data-path-param="file" placeholder="请输入日志文件名(如app.log)" value="app.log" style="min-height: auto; height: 40px; margin-bottom: 0;"></div>
+              <button class="test-button" onclick="testApiWithPathParams('GET', '/logs/:file', this)">发送请求</button>
               <div class="test-result"></div>
             </div>
           </div>
@@ -2837,13 +2590,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">{"filename": "app.log"}</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -2928,16 +2675,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">[{
-  "type": "nodejs",
-  "name": "axios"
-}]</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -2981,13 +2719,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">[1, 2]</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -3075,18 +2807,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">{
-  "name": "我的订阅",
-  "url": "https://example.com/sub.json",
-  "type": "public-repo",
-  "schedule": "0 0 * * *"
-}</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -3135,18 +2856,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">{
-  "id": 1,
-  "name": "更新的订阅",
-  "url": "https://example.com/new.json",
-  "type": "public-repo"
-}</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -3192,13 +2902,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">[1, 2]</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -3239,13 +2943,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">[1]</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -3286,13 +2984,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">[1]</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -3333,13 +3025,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="detail-section">
-              <div class="detail-title">
-                📤 请求示例
-                <button class="copy-btn" onclick="event.stopPropagation(); copyCode(this)">复制</button>
-              </div>
-              <div class="code-block">[1]</div>
-            </div>
+            
             <div class="detail-section">
               <div class="detail-title">
                 📥 响应示例
@@ -3526,12 +3212,49 @@
     }
 
     // 页面加载时初始化URL显示
+    // 从 localStorage 加载配置
+    function loadConfig() {
+      const savedHost = localStorage.getItem('qlapi_host');
+      const savedPrefix = localStorage.getItem('qlapi_prefix');
+      const savedToken = localStorage.getItem('qlapi_token');
+
+      if (savedHost) {
+        document.getElementById('apiHost').value = savedHost;
+      }
+      if (savedPrefix) {
+        document.getElementById('apiPrefix').value = savedPrefix;
+      }
+      if (savedToken) {
+        document.getElementById('tokenDisplay').value = savedToken;
+        globalToken = savedToken;
+      }
+    }
+
+    // 保存配置到 localStorage
+    function saveConfig() {
+      localStorage.setItem('qlapi_host', document.getElementById('apiHost').value);
+      localStorage.setItem('qlapi_prefix', document.getElementById('apiPrefix').value);
+      localStorage.setItem('qlapi_token', document.getElementById('tokenDisplay').value);
+    }
+
     document.addEventListener('DOMContentLoaded', function() {
+      // 先加载本地存储的配置
+      loadConfig();
       updateAllUrls();
 
-      // 监听配置变化
-      document.getElementById('apiHost').addEventListener('input', updateAllUrls);
-      document.getElementById('apiPrefix').addEventListener('change', updateAllUrls);
+      // 监听配置变化并保存
+      document.getElementById('apiHost').addEventListener('input', function() {
+        updateAllUrls();
+        saveConfig();
+      });
+      document.getElementById('apiPrefix').addEventListener('change', function() {
+        updateAllUrls();
+        saveConfig();
+      });
+      document.getElementById('tokenDisplay').addEventListener('input', function(e) {
+        globalToken = e.target.value;
+        saveConfig();
+      });
     });
 
     // 复制文本到剪贴板
@@ -3565,10 +3288,7 @@
       copyText(button, text);
     }
 
-    // 监听Token输入框变化,手动填写时同步到globalToken
-    document.getElementById('tokenDisplay').addEventListener('input', function(e) {
-      globalToken = e.target.value;
-    });
+    
 
     // 为所有测试面板添加复制按钮
     document.querySelectorAll('.test-panel').forEach(panel => {
@@ -3632,6 +3352,7 @@
           globalToken = data.data.token;
           // 将token显示在输入框中
           document.getElementById('tokenDisplay').value = data.data.token;
+          saveConfig();
           showStatus('Token 获取成功并已自动应用', 'success');
         }
       } catch (error) {
@@ -3641,6 +3362,32 @@
         button.disabled = false;
         button.textContent = '获取Token';
       }
+    }
+
+    // 带路径参数的测试API
+    async function testApiWithPathParams(method, pathTemplate, button) {
+      const testPanel = button.parentElement;
+      const pathParamInputs = testPanel.querySelectorAll('input[data-path-param]');
+      let actualPath = pathTemplate;
+
+      for (const input of pathParamInputs) {
+        const paramName = input.getAttribute('data-path-param');
+        const paramValue = input.value.trim();
+        if (!paramValue) {
+          showStatus(`请输入路径参数: ${paramName}`, 'error');
+          return;
+        }
+        actualPath = actualPath.replace(`:${paramName}`, encodeURIComponent(paramValue));
+      }
+
+      // 更新URL显示
+      const urlBlock = testPanel.closest('.api-details').querySelector('.url-block');
+      if (urlBlock) {
+        urlBlock.textContent = getFullUrl(actualPath);
+      }
+
+      // 调用通用测试函数
+      testApi(method, actualPath, button);
     }
 
     // 测试API
@@ -3712,6 +3459,7 @@
         if (path === '/user/login' && data.code === 200 && data.data && data.data.token) {
           globalToken = data.data.token;
           document.getElementById('tokenDisplay').value = data.data.token;
+          saveConfig();
           showStatus('登录成功,Token已自动应用', 'success');
         }
       } catch (error) {
